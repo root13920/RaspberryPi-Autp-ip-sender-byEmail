@@ -17,7 +17,7 @@ Therefore, an requirement that the Raspberry pi can tell us its ip address once 
 * Raspberry pi 3b+ or a device with linux kernel os
 ## Start
 
-1. Open the python file "**demo.py**", and change the sender and reciever, then input the SMTP protocal authenticated key of the sender's email (The authen-key can be gained by asking your email server, for instance, the key in qq mail can be easily received by verifying your phone number) ![221a3d535449f0c740c5b3cdad33b17b](Raspberry pi IP addr auto sender.resources/屏幕快照 2020-07-31 下午5.53.06.png)
+1. Open the python file "**demo.py**", and change the sender and reciever, then input the SMTP protocal authenticated key of the sender's email (The authen-key can be gained by asking your email server, for instance, the key in qq mail can be easily received by verifying your phone number) ![pic1](Raspberry pi IP addr auto sender.resources/屏幕快照 2020-07-31 下午5.53.06.png)
 2. After that we create a directory on our raspi 
 ```
 mkdir ~/autoIpSender
