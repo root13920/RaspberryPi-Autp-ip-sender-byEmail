@@ -17,7 +17,7 @@ Therefore, an requirement that the Raspberry pi can tell us its ip address once 
 * Raspberry pi 3b+ or a device with linux kernel os
 ## Start
 
-1. Open the python file "**demo.py**", and change the sender and reciever, then input the SMTP protocal authenticated key of the sender's email (The authen-key can be gained by asking your email server, for instance, the key in qq mail can be easily received by verifying your phone number) ![221a3d535449f0c740c5b3cdad33b17b](Raspberry pi IP addr auto sender.resources/屏幕快照 2020-07-31 下午5.53.06.png)
+1. Open the python file "**demo.py**", and change the sender and reciever, then input the SMTP protocal authenticated key of the sender's email (The authen-key can be gained by asking your email server, for instance, the key in qq mail can be easily received by verifying your phone number) ![pic1](pics/pic1.png)
 2. After that we create a directory on our raspi 
 ```
 mkdir ~/autoIpSender
@@ -26,8 +26,9 @@ mkdir ~/autoIpSender
 ```
 ifconfig wlan0 | grep -o -E "inet [0-9.]+"| grep -o -E [0-9.]+
 ```
-![e2a8c581140fc9ee802cdbad7dc0308d](Raspberry pi IP addr auto sender.resources/FDB69866-B44C-43D7-8135-83CECEABE45D.png)
+![pic2](pics/pic2.png)
 The result was diplayed above.
+
 4. Passing the ip address which was found out from step 3 to our python file.
 ```
 $ /sbin/ifconfig wlan0 |addr= grep -o -E "inet [0-9.]+"|grep -o -E [0-9.]+|xargs python /home/pi/autoIpSender/demo.py
@@ -35,7 +36,7 @@ $ /sbin/ifconfig wlan0 |addr= grep -o -E "inet [0-9.]+"|grep -o -E [0-9.]+|xargs
 before moving into next step, it would be better if we test on commend line at first.
 5. Finally, we should add bash line into the **etc/rc.local** to ensure it will be executed after booting the raspi. 
 
-  ![E1BEA504-6764-4FF5-BBBD-79F570ABCBE1](/Users/apple/Desktop/我的Markdown笔记/Raspberry pi IP addr auto sender.resources/E1BEA504-6764-4FF5-BBBD-79F570ABCBE1.png)
+  ![pic3](pics/pic3.png)
 
 ### <span id="link">link:</span>
 
