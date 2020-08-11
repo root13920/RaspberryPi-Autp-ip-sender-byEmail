@@ -43,6 +43,6 @@ before moving into next step, it would be better if we test on commend line at f
 ### <span id="link">link:</span>
 
 ``` 
-wget https://raw.githubusercontent.com/epicure1998/RaspberryPi-Autp-ip-sender-byEmail/master/shellScripts/autoInstall.sh |bash
+sudo wget https://raw.githubusercontent.com/epicure1998/RaspberryPi-Autp-ip-sender-byEmail/master/shellScripts/autoInstall.sh |bash
 ```
 
