@@ -39,4 +39,13 @@ sudo echo "exec /sbin/ifconfig wlan0 |addr= grep -o -E "inet [0-9.]+"|grep -o -E
 sudo echo ")" >>/etc/rc.local
 sudo echo "exit 0" >> /etc/rc.local
 
+read -p "Would you like you reboot your raspberry pi now? Yes/No : " select
+
+if [ $select = "yes" ] || [ ${select} = "y" ];
+then
+ sudo reboot
+else 
+ echo "The function will be available after rebooting.."
+fi
+
 echo "finish.."
