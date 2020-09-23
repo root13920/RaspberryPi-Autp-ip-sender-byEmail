@@ -8,7 +8,7 @@ mkdir autoipsender
 
 cd autoipsender
 
-wget -v https://raw.githubusercontent.com/epicure1998/RaspberryPi-Autp-ip-sender-byEmail/master/pyfiles/demo.py
+wget -v https://raw.githubusercontent.com/root13920/RaspberryPi-Autp-ip-sender-byEmail/master/pyfiles/demo.py
 
 echo -n "Please input the sender email.."
 
